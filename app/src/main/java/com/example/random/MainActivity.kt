@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
 
         val botonRandom = findViewById<Button>(R.id.botonRandom)
         val botonCoin = findViewById<Button>(R.id.botonCoin)
-        val botonSaludo = findViewById<Button>(R.id.botonHola)
 
 
         botonRandom.setOnClickListener {
@@ -26,11 +25,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, FlipACoin::class.java)
             startActivity(intent)
         }
-
-        botonSaludo.setOnClickListener {
-            Toast.makeText(this, "Hola Suuuu", Toast.LENGTH_SHORT).show()
-        }
-
 
     }
 
